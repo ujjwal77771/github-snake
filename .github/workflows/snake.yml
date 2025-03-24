@@ -19,3 +19,9 @@ jobs:
         with:
           target_branch: output
           build_dir: dist
+          - name: Push the snake
+  uses: crazy-max/ghaction-github-pages@v3
+  with:
+    target_branch: output
+    build_dir: dist
+    token: ${{ secrets.GITHUB_TOKEN }}
